@@ -6,9 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.android.gms.awareness.Awareness;
-import com.google.android.gms.common.api.GoogleApiClient;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -24,10 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mSnapshotButton.setOnClickListener(this);
         mFenceButton.setOnClickListener(this);
 
-        GoogleApiClient client = new GoogleApiClient.Builder(this)
-                .addApi(Awareness.API)
-                .build();
-        client.connect();
+
     }
 
     @Override
