@@ -174,6 +174,7 @@ public class SnapshotActivity extends AppCompatActivity {
                         if (placeLikelihoodList!=null && !placeLikelihoodList.isEmpty()) {
                             mNearbyPlacesCountText.setText(Integer.toString(placeLikelihoodList.size()));
                             mNearbyPlacesText.setText(placeLikelihoodList.get(0).getPlace().getName().toString() );
+                            Log.i("SnapshotAPI","current place: "+placeLikelihoodList.get(0).toString());
                         }
                         else{
                             mNearbyPlacesCountText.setText(0);
